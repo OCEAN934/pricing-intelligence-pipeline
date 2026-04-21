@@ -152,7 +152,7 @@ uvicorn api.main:app --reload
 
 
 
-# 📈 Example Use Cases
+# Example Use Cases
 
 * Competitor price tracking
 * Market positioning analysis
