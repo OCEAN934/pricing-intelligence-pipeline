@@ -3,6 +3,7 @@ import sqlite3
 
 app = FastAPI()
 
+
 # Database connection
 def get_db():
     return sqlite3.connect("books.db")
@@ -62,6 +63,32 @@ def filter_books(min_price: float = 0, max_price: float = 1000):
     return {"data": result}
 
 
+# Sort books by price
+@app.get("/books/sorted")
+def sort_books(order: str = "asc"):
+    conn = get_db()
+    cursor = conn.cursor()
+
+    if order == "desc":
+        query = "SELECT title, price, availability FROM books ORDER BY price DESC"
+    else:
+        query = "SELECT title, price, availability FROM books ORDER BY price ASC"
+
+    cursor.execute(query)
+    rows = cursor.fetchall()
+
+    result = []
+    for row in rows:
+        result.append({
+            "title": row[0],
+            "price": row[1],
+            "availability": row[2]
+        })
+
+    conn.close()
+    return {"data": result}
+
+
 # Insight: Average price
 @app.get("/insights/avg-price")
 def avg_price():
@@ -107,7 +134,7 @@ def price_category():
     return {"data": result}
 
 
-# AI-lite: Category summary (counts)
+# AI-lite: Category summary
 @app.get("/insights/category-summary")
 def category_summary():
     conn = get_db()

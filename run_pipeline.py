@@ -1,5 +1,5 @@
 import os
 
-os.system("python scraper/scraper.py")
-os.system("python processing/clean_data.py")
-os.system("python database/db.py")
+os.system("python -m scraper.scraper")
+os.system("python -m processing.clean_data")
+os.system("python -m database.db")
