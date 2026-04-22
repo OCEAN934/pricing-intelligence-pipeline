@@ -1,6 +1,6 @@
 # Competitor Pricing Intelligence Pipeline
 
-# Overview
+## Overview
 
 Businesses constantly need visibility into competitor pricing to make informed decisions on strategy, positioning, and market response. However, such data is rarely available in a structured, ready-to-use format.
 
@@ -13,7 +13,7 @@ This project builds an **end-to-end automated data pipeline** that collects, pro
 - Deployed live on cloud (Render)  
 - Production-style logging and modular design  
 
-# Problem Statement
+## Problem Statement
 
 Organizations often lack:
 
@@ -25,7 +25,7 @@ This results in **inefficient decision-making** and missed opportunities.
 
 
 
-# Solution
+## Solution
 
 This project implements a **Pricing Intelligence Pipeline** that:
 
@@ -37,10 +37,12 @@ This project implements a **Pricing Intelligence Pipeline** that:
 
 
 
-# Architecture
+## Architecture
+
 
 Scraper → Raw Data (JSON) → Data Cleaning → Database (SQLite) → FastAPI → Business API Endpoints
 
+This pipeline ensures smooth data flow from raw extraction to actionable business insights.
 
 
 ## Features
@@ -84,7 +86,7 @@ Demonstrates filtering based on price range.
 
 #### Sorted Results
 
-Depicts the books in descending or ascending range
+Displays books sorted in ascending or descending order
 
 
 <img width="1301" height="323" alt="image" src="https://github.com/user-attachments/assets/fcf9e66f-36a1-41ce-89cd-39f9a72adbde" />
@@ -92,7 +94,7 @@ Depicts the books in descending or ascending range
 
 #### Price Category
 
-Delineates and labels the books based upon the price they are associated with
+Categorizes books based on price segments
 
 <img width="1289" height="441" alt="image" src="https://github.com/user-attachments/assets/1ee2c0a0-189e-4b5d-94ca-a232ec50ef30" />
 
@@ -104,24 +106,24 @@ Provides business insights from data.
 <img width="1292" height="165" alt="image" src="https://github.com/user-attachments/assets/6775c1a7-4d25-4448-bee1-c6469b15818e" />
 
 
-# Data Collection
+## Data Collection
 
 * Handles pagination across multiple pages
 * Extracts product title, price, and availability
 * Gracefully handles scraping errors
 
-# Data Cleaning
+## Data Cleaning
 
 * Removes encoding inconsistencies
 * Standardizes price formats
 * Handles missing or inconsistent values
 
-# Data Storage
+## Data Storage
 
 * Stores cleaned data in SQLite database
 * Structured schema for efficient querying
 
-# API Layer
+## API Layer
 
 Built using FastAPI with the following endpoints:
 
@@ -132,7 +134,7 @@ Built using FastAPI with the following endpoints:
 * `/insights/price-category` → Categorized pricing segments
 * `/insights/category-summary` → Distribution of pricing tiers
 
-# Intelligent Layer (AI-lite)
+## Intelligent Layer (AI-lite)
 
 A lightweight intelligence layer categorizes products into:
 
@@ -144,7 +146,7 @@ This helps simulate **market segmentation analysis** used in real-world business
 
 ---
 
-# Design Decisions & Trade-offs
+## Design Decisions & Trade-offs
 
 * **SQLite over Postgres**: Chosen for simplicity and quick setup within time constraints
 * **Limited pagination scope**: Ensures faster execution while demonstrating scalability
@@ -153,7 +155,7 @@ This helps simulate **market segmentation analysis** used in real-world business
 
 
 
-# Automation
+## Automation
 
 The pipeline is fully automated and can be executed using a single command:
 
@@ -165,7 +167,7 @@ It can be further scheduled using cron jobs or task schedulers to ensure continu
 
 ---
 
-# Tech Stack
+## Tech Stack
 
 * Python
 * BeautifulSoup (Web Scraping)
@@ -175,7 +177,7 @@ It can be further scheduled using cron jobs or task schedulers to ensure continu
 
 ---
 
-# How to Run Locally
+## How to Run Locally
 
 # 1. Clone the repository
 
@@ -234,8 +236,8 @@ uvicorn api.main:app --reload
 
 # **Live API Links**
 
-- Base URL: https://pricing-intelligence-pipeline.onrender.com  
-- API Documentation (Swagger UI): https://pricing-intelligence-pipeline.onrender.com/docs
+- **Base URL:** https://pricing-intelligence-pipeline.onrender.com  
+- **API Documentation (Swagger UI):** https://pricing-intelligence-pipeline.onrender.com/docs
 
 
 # Conclusion
