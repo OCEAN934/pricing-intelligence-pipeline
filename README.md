@@ -6,7 +6,12 @@ Businesses constantly need visibility into competitor pricing to make informed d
 
 This project builds an **end-to-end automated data pipeline** that collects, processes, and delivers pricing data in a way that is directly usable by businesses.
 
+## Project Highlights
 
+- End-to-end automated data pipeline  
+- Real-time API with business insights  
+- Deployed live on cloud (Render)  
+- Production-style logging and modular design  
 
 # Problem Statement
 
@@ -38,11 +43,22 @@ Scraper → Raw Data (JSON) → Data Cleaning → Database (SQLite) → FastAPI 
 
 
 
-# Features
+## Features
 
-# API Preview
+- Automated web scraping with pagination support  
+- Data cleaning and normalization pipeline  
+- SQLite-based structured data storage  
+- REST API built with FastAPI  
+- Filtering and sorting capabilities  
+- Business insights (average price, segmentation)  
+- Lightweight intelligence layer for price categorization  
+- Fully deployed and accessible via public URL  
 
-# Swagger UI
+### API Preview
+
+Below are sample responses and endpoints demonstrating the functionality of the deployed API:
+
+#### Swagger UI
 
 Shows all the available endpoints
 
@@ -50,7 +66,7 @@ Shows all the available endpoints
 <img width="1350" height="566" alt="image" src="https://github.com/user-attachments/assets/b5227b09-e901-4384-8ced-86cdaf91727d" />
 
 
-# Fetch Books Endpoint
+#### Fetch Books Endpoint
 
 Returns structured product data.
 
@@ -58,7 +74,7 @@ Returns structured product data.
 <img width="1293" height="441" alt="image" src="https://github.com/user-attachments/assets/dd148690-4754-4777-b476-95e8d0fbbf40" />
 
 
-# Price Filtering
+#### Price Filtering
 
 Demonstrates filtering based on price range.
 
@@ -66,7 +82,7 @@ Demonstrates filtering based on price range.
 <img width="1298" height="388" alt="image" src="https://github.com/user-attachments/assets/74ff504e-42db-426a-834a-e6d1ff179c76" />
 
 
-# Sorted Range 
+#### Sorted Results
 
 Depicts the books in descending or ascending range
 
@@ -74,14 +90,14 @@ Depicts the books in descending or ascending range
 <img width="1301" height="323" alt="image" src="https://github.com/user-attachments/assets/fcf9e66f-36a1-41ce-89cd-39f9a72adbde" />
 
 
-# Price Category
+#### Price Category
 
 Delineates and labels the books based upon the price they are associated with
 
 <img width="1289" height="441" alt="image" src="https://github.com/user-attachments/assets/1ee2c0a0-189e-4b5d-94ca-a232ec50ef30" />
 
 
-# Insights Endpoint
+#### Insights Endpoint
 
 Provides business insights from data.
 
@@ -165,7 +181,7 @@ It can be further scheduled using cron jobs or task schedulers to ensure continu
 
 ```bash
 git clone <your-repo-link>
-cd data-engineering-assignment/project
+cd pricing-intelligence-pipeline
 ```
 
 # 2. Create virtual environment
