@@ -216,6 +216,11 @@ uvicorn api.main:app --reload
 * Build a frontend dashboard for visualization
 
 
+# **Live API**
+
+- Base URL: https://pricing-intelligence-pipeline.onrender.com  
+- API Documentation (Swagger UI): https://pricing-intelligence-pipeline.onrender.com/docs
+
 
 # Conclusion
 
