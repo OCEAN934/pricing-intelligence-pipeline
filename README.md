@@ -40,6 +40,54 @@ Scraper → Raw Data (JSON) → Data Cleaning → Database (SQLite) → FastAPI 
 
 # Features
 
+# API Preview
+
+# Swagger UI
+
+Shows all the available endpoints
+
+
+<img width="1350" height="566" alt="image" src="https://github.com/user-attachments/assets/b5227b09-e901-4384-8ced-86cdaf91727d" />
+
+
+# Fetch Books Endpoint
+
+Returns structured product data.
+
+
+<img width="1293" height="441" alt="image" src="https://github.com/user-attachments/assets/dd148690-4754-4777-b476-95e8d0fbbf40" />
+
+
+# Price Filtering
+
+Demonstrates filtering based on price range.
+
+
+<img width="1298" height="388" alt="image" src="https://github.com/user-attachments/assets/74ff504e-42db-426a-834a-e6d1ff179c76" />
+
+
+# Sorted Range 
+
+Depicts the books in descending or ascending range
+
+
+<img width="1301" height="323" alt="image" src="https://github.com/user-attachments/assets/fcf9e66f-36a1-41ce-89cd-39f9a72adbde" />
+
+
+# Price Category
+
+Delineates and labels the books based upon the price they are associated with
+
+<img width="1289" height="441" alt="image" src="https://github.com/user-attachments/assets/1ee2c0a0-189e-4b5d-94ca-a232ec50ef30" />
+
+
+# Insights Endpoint
+
+Provides business insights from data.
+
+<img width="1292" height="165" alt="image" src="https://github.com/user-attachments/assets/6775c1a7-4d25-4448-bee1-c6469b15818e" />
+
+
 # Data Collection
 
 * Handles pagination across multiple pages
