@@ -211,10 +211,8 @@ uvicorn api.main:app --reload
 
 # Future Improvements
 
-* Integrate real-time scheduling (Airflow / Cron)
 * Expand to multiple data sources
 * Add historical price tracking
-* Deploy using cloud infrastructure (AWS/GCP)
 * Build a frontend dashboard for visualization
 
 
