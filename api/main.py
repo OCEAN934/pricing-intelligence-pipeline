@@ -2,7 +2,13 @@ from fastapi import FastAPI
 import sqlite3
 import os
 
-app = FastAPI()
+app = FastAPI(
+    title="Pricing Intelligence API",
+    version="1.0.0",
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_url="/openapi.json"
+)
 
 
 # 🔥 Ensure database exists (for deployment)
