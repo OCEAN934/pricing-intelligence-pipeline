@@ -239,6 +239,8 @@ uvicorn api.main:app --reload
 - **Base URL:** https://pricing-intelligence-pipeline.onrender.com  
 - **API Documentation (Swagger UI):** https://pricing-intelligence-pipeline.onrender.com/docs
 
+# **Live Dashboard Link**
+https://pricing-intelligence-dashboard.streamlit.app
 
 # Conclusion
 
