@@ -14,7 +14,7 @@ st.set_page_config(
 # ---------------------------
 # HEADER
 # ---------------------------
-st.title("📊 Pricing Intelligence Dashboard")
+st.title("Pricing Intelligence Dashboard")
 st.markdown("Real-time insights powered by your data pipeline 🚀")
 
 # ---------------------------
@@ -53,7 +53,7 @@ def fetch_category_summary():
 # ---------------------------
 # LOAD DATA WITH SPINNER
 # ---------------------------
-with st.spinner("🚀 Fetching data from API (may take 30–60 sec on first load)..."):
+with st.spinner("Fetching data from API (may take 30–60 sec on first load)..."):
     df = fetch_books()
 
 # ---------------------------
@@ -93,7 +93,7 @@ filtered_df = filtered_df.sort_values(
 # ---------------------------
 # METRICS
 # ---------------------------
-st.subheader("📌 Key Metrics")
+st.subheader(" Key Metrics")
 
 col1, col2, col3 = st.columns(3)
 
@@ -108,13 +108,13 @@ col3.metric("Max Price", f"£{max_price_val:.2f}")
 # ---------------------------
 # DATA TABLE
 # ---------------------------
-st.subheader("📚 Book Listings")
+st.subheader(" Books Listings")
 st.dataframe(filtered_df, use_container_width=True)
 
 # ---------------------------
 # CHARTS
 # ---------------------------
-st.subheader("📊 Insights")
+st.subheader(" Insights")
 
 col1, col2 = st.columns(2)
 
@@ -149,5 +149,5 @@ if sorted_data:
 # ---------------------------
 st.markdown("---")
 st.markdown(
-    "✅ Built with Streamlit | ⚡ Powered by FastAPI backend | 🌍 Live Data Pipeline"
+    " Built with Streamlit | ⚡ Powered by FastAPI backend | 🌍 Live Data Pipeline"
 )
