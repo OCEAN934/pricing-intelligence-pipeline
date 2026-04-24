@@ -34,7 +34,7 @@ def get_books():
     conn = get_db()
     cursor = conn.cursor()
 
-    cursor.execute("SELECT title, price, availability FROM books LIMIT 20")
+    cursor.execute("SELECT title, price, availability FROM books")
     rows = cursor.fetchall()
 
     conn.close()
